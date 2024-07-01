@@ -10,15 +10,11 @@ import { Router } from '@angular/router';
   styleUrl: './sign-up.component.css'
 })
 export class SignUpComponent {
-  @Input() isSignedIn: boolean | undefined;
-  @Output() isSignedInChange = new EventEmitter<boolean>()
+  @Output() navigateRequest = new EventEmitter<string>();
+
   constructor(private router: Router) { }
 
   navigateToSignIn() {
-    this.isSignedIn = !this.isSignedIn;
-    this.isSignedInChange.emit(this.isSignedIn);
     this.router.navigateByUrl('/signin');
   }
- 
-  
 }

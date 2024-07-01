@@ -5,9 +5,6 @@ import { Router } from '@angular/router';
   providedIn: 'root'
 })
 export class NavigationService {
-  navigateToMainPage() {
-    throw new Error('Method not implemented.');
-  }
 
   constructor(private router: Router) { }
 
