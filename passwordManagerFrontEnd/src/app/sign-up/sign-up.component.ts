@@ -1,6 +1,7 @@
+import { NgIf } from '@angular/common';
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Router } from '@angular/router';
-import { NgIf } from '@angular/common';
+
 @Component({
   selector: 'app-sign-up',
   standalone: true,
