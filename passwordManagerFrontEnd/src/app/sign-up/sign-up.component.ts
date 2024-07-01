@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sign-up',
@@ -8,5 +9,11 @@ import { Component } from '@angular/core';
   styleUrl: './sign-up.component.css'
 })
 export class SignUpComponent {
+  @Output() navigateRequest = new EventEmitter<string>();
 
+  constructor(private router: Router) { }
+
+  navigateToSignIn() {
+    this.router.navigateByUrl('/signin');
+  }
 }
