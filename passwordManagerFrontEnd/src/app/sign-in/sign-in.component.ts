@@ -13,9 +13,12 @@ import { NavigationService } from '../navigation.service';
 export class SignInComponent {
   @Output() navigateRequest = new EventEmitter<string>();
 
-  constructor(private navigationService: NavigationService) { }
+  constructor(private router: Router) { }
   
   navigateToSignUp() {
-    this.navigationService.navigateToSignUp();
+    this.router.navigateByUrl('/signup');
+  }
+  navigateToMainPage() {
+    this.router.navigateByUrl('/mainpage');
   }
 }
