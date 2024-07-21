@@ -1,11 +1,11 @@
 <section class="h-screen w-screen">
-    <section class="h-32 flex justify-center items-center">
-        <p>passwordManagerFrontEnd</p>
-    </section>
     <section class= "flex  items-center flex-col bg-white rounded-xl h-full w-full">
-   
-        <app-item-card></app-item-card>
-        <app-item-card></app-item-card>
+        <app-item-card
+        *ngFor="let card of cards"
+        [Title]="card.title"
+        [Description]="card.content"
+        ></app-item-card>
+      
     
     </section>
 
