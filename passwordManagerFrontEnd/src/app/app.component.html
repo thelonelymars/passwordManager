@@ -1,6 +1,5 @@
 <main class="flex flex-col w-full h-full justify-center items-center bg-neutral-700">
-   <app-sign-up></app-sign-up>
-  
+   <app-sign-up *ngIf="!isSignedIn" [(isSignedIn)]="isSignedIn"></app-sign-up>
+   <div *ngIf="isSignedIn"><router-outlet></router-outlet></div>
 
- 
 </main>

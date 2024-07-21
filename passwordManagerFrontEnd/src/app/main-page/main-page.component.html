@@ -1,9 +1,15 @@
-<section class="bg-white rounded-xl h-screen">
-    <div class="w-fit flex flex-row ">
-        <img src="/passwordManagerFrontEnd/src/assets/coding_2010990.png" class="" alt="">
-        <label for="">netflix</label>
-
+<section class="h-screen w-screen">
+    <section class= "flex  items-center flex-col bg-white rounded-xl h-full w-full">
+        <app-item-card
+        *ngFor="let card of cards"
+        [Title]="card.title"
+        [Description]="card.content"
+        ></app-item-card>
+      
+    
+    </section>
 
     </div>
 
 </section>
+

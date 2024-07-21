@@ -1,0 +1,33 @@
+<div class="flex flex-row justify-between items-center my-1 w-screen h-20 max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-md relative">
+    <div class="flex flex-row items-center">
+      <img class="object-cover" src="assets/user_13984171 (1).webp" alt="image">
+      <div class="flex flex-col p-4">
+        <div class="flex flex-col">
+          <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900">{{Title}}</h5>
+          <p class="mb-3 font-normal text-gray-700 overflow-auto">{{Description}}</p>
+        </div>
+      </div>
+    </div>
+    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <mat-icon>dialpad</mat-icon>
+        <span>Redial</span>
+      </button>
+      <button mat-menu-item disabled>
+        <mat-icon>voicemail</mat-icon>
+        <span>Check voice mail</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>notifications_off</mat-icon>
+        <span>Disable alerts</span>
+      </button>
+    </mat-menu>
+       
+  
+      
+    
+  </div>
+  
