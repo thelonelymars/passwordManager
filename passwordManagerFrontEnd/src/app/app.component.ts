@@ -15,7 +15,8 @@ import { NgIf } from '@angular/common';
 })
 export class AppComponent {
   constructor(private router: Router) {}
-  isSignedIn = false;
-
+  ngOnInit() {
+    this.router.navigateByUrl('/signup');
+  }
  
 }
