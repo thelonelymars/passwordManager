@@ -1,9 +1,12 @@
+
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
 import { NgIf, NgFor } from '@angular/common';
 
+
+import { NgIf,NgFor } from '@angular/common';
 @Component({
   selector: 'app-item-card',
   standalone: true,
@@ -12,6 +15,7 @@ import { NgIf, NgFor } from '@angular/common';
   styleUrl: './item-card.component.css'
 })
 export class ItemCardComponent {
+
 
   @Input() id: string = '';
   @Input() Title: string = '';
@@ -29,3 +33,5 @@ export class ItemCardComponent {
     tempCardInfo = [];
   }
 }
+
+

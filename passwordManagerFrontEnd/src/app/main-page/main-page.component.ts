@@ -1,10 +1,12 @@
 import { Component, ViewChild } from '@angular/core';
 import { ItemCardComponent } from '../item-card/item-card.component';
 import { NgFor } from '@angular/common';
+
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { trigger, state, style, transition, animate } from '@angular/animations';
+
 
 @Component({
   selector: 'app-main-page',
@@ -25,6 +27,8 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
       ])
     ])
   ],
+
+
   templateUrl: './main-page.component.html',
   styleUrl: './main-page.component.css'
 })
@@ -78,3 +82,5 @@ export class MainPageComponent {
     this.cards=this.cards.filter(card => card.id !== parseInt(CardInfo[0]));
   }
 }
+
+
