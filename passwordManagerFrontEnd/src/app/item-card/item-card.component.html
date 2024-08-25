@@ -1,3 +1,4 @@
+
 <div class="flex flex-row justify-between items-center my-1 w-screen h-20 max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-md relative">
     <div class="flex flex-row items-center">
       <img class="object-cover" src="assets/user_13984171 (1).webp" alt="image">
@@ -12,22 +13,11 @@
       <mat-icon>more_vert</mat-icon>
     </button>
     <mat-menu #menu="matMenu">
-      <button mat-menu-item>
-        <mat-icon>dialpad</mat-icon>
-        <span>Redial</span>
-      </button>
-      <button mat-menu-item disabled>
-        <mat-icon>voicemail</mat-icon>
-        <span>Check voice mail</span>
-      </button>
-      <button mat-menu-item>
-        <mat-icon>notifications_off</mat-icon>
-        <span>Disable alerts</span>
+      <button (click)="SendCardInfo()" mat-menu-item>
+        <mat-icon>delete</mat-icon>
+        <span>Delete</span>
       </button>
     </mat-menu>
-       
-  
-      
-    
+
   </div>
   
